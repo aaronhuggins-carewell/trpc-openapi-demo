@@ -1,0 +1,33 @@
+{
+	"name": "trpc-openapi-demo",
+	"version": "0.1.0",
+	"private": true,
+	"workspaces": [
+		"packages/*",
+		"apps/*"
+	],
+	"engines": {
+		"node": ">=16.0.0"
+	},
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run dev --parallel",
+		"lint": "turbo run lint",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\""
+	},
+	"devDependencies": {
+		"eslint-config-mycompany": "*",
+		"prettier": "latest",
+		"ts-node": "latest",
+		"turbo": "latest",
+		"typescript": "latest"
+	},
+	"prettier": {
+		"tabWidth": 2,
+		"useTabs": true,
+		"printWidth": 120,
+		"semi": true,
+		"trailingComma": "all",
+		"singleQuote": true
+	}
+}

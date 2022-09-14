@@ -1,0 +1,39 @@
+{
+	"name": "mycompany-api",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"build": "tsc"
+	},
+	"dependencies": {
+		"@trpc/client": "^9.27.2",
+		"@trpc/server": "^9.27.2",
+		"@types/morgan": "^1.9.3",
+		"mycompany-api-routes": "*",
+		"express": "^4.18.1",
+		"trpc-openapi": "^0.7.0"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.14",
+		"@types/node": "16.11.59",
+		"eslint": "latest",
+		"eslint-config-mycompany": "*",
+		"monorepo-tsconfig": "*",
+		"typescript": "latest",
+		"zod": "^3.19.1"
+	},
+	"prettier": {
+		"tabWidth": 2,
+		"useTabs": true,
+		"printWidth": 120,
+		"semi": true,
+		"trailingComma": "all",
+		"singleQuote": true
+	},
+	"eslintConfig": {
+		"extends": [
+			"mycompany"
+		],
+		"root": true
+	}
+}

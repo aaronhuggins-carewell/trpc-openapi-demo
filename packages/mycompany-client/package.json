@@ -1,0 +1,17 @@
+{
+	"name": "mycompany-client",
+	"version": "0.1.0",
+	"scripts": {
+		"build": "tsc"
+	},
+	"dependencies": {
+		"@trpc/client": "^9.27.2",
+		"mycompany-api-routes": "*"
+	},
+	"devDependencies": {
+		"typescript": "latest"
+	},
+	"bundledDependencies": [
+		"mycompany-api-routes"
+	]
+}

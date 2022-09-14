@@ -1,0 +1,35 @@
+{
+	"name": "mycompany-api-routes",
+	"version": "0.1.0",
+	"main": "dist/routes.js",
+	"types": "dist/routes.d.ts",
+	"scripts": {
+		"build": "tsc"
+	},
+	"dependencies": {
+		"@trpc/server": "^9.27.2",
+		"trpc-openapi": "^0.7.0"
+	},
+	"devDependencies": {
+		"@types/node": "16.11.59",
+		"eslint": "latest",
+		"eslint-config-mycompany": "*",
+		"monorepo-tsconfig": "*",
+		"typescript": "latest",
+		"zod": "^3.19.1"
+	},
+	"prettier": {
+		"tabWidth": 2,
+		"useTabs": true,
+		"printWidth": 120,
+		"semi": true,
+		"trailingComma": "all",
+		"singleQuote": true
+	},
+	"eslintConfig": {
+		"extends": [
+			"mycompany"
+		],
+		"root": true
+	}
+}
