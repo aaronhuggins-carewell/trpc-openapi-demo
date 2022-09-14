@@ -1,6 +1,11 @@
 {
 	"name": "mycompany-client",
 	"version": "0.1.0",
+	"main": "dist/client.ts",
+	"types": "dist/client.d.ts",
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"build": "tsc",
 		"lint": "eslint src/*.ts*"
@@ -18,5 +23,19 @@
 	},
 	"bundledDependencies": [
 		"mycompany-api-routes"
-	]
+	],
+	"prettier": {
+		"tabWidth": 2,
+		"useTabs": true,
+		"printWidth": 120,
+		"semi": true,
+		"trailingComma": "all",
+		"singleQuote": true
+	},
+	"eslintConfig": {
+		"extends": [
+			"mycompany"
+		],
+		"root": true
+	}
 }
