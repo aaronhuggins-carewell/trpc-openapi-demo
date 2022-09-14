@@ -4,19 +4,20 @@
 	"main": "dist/routes.js",
 	"types": "dist/routes.d.ts",
 	"scripts": {
-		"build": "tsc"
+		"build": "tsc",
+		"lint": "eslint src/*.ts*"
 	},
 	"dependencies": {
 		"@trpc/server": "^9.27.2",
-		"trpc-openapi": "^0.7.0"
+		"trpc-openapi": "^0.7.0",
+		"zod": "^3.19.1"
 	},
 	"devDependencies": {
 		"@types/node": "16.11.59",
 		"eslint": "latest",
 		"eslint-config-mycompany": "*",
 		"monorepo-tsconfig": "*",
-		"typescript": "latest",
-		"zod": "^3.19.1"
+		"typescript": "latest"
 	},
 	"prettier": {
 		"tabWidth": 2,

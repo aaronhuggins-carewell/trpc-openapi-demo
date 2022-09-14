@@ -3,6 +3,7 @@
 	"display": "Default",
 	"compilerOptions": {
 		"target": "ES2020",
+		"module": "CommonJS",
 		"composite": false,
 		"declaration": true,
 		"declarationMap": true,

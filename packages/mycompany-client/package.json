@@ -2,13 +2,18 @@
 	"name": "mycompany-client",
 	"version": "0.1.0",
 	"scripts": {
-		"build": "tsc"
+		"build": "tsc",
+		"lint": "eslint src/*.ts*"
 	},
 	"dependencies": {
 		"@trpc/client": "^9.27.2",
 		"mycompany-api-routes": "*"
 	},
 	"devDependencies": {
+		"@types/node": "16.11.59",
+		"eslint": "latest",
+		"eslint-config-mycompany": "*",
+		"monorepo-tsconfig": "*",
 		"typescript": "latest"
 	},
 	"bundledDependencies": [
