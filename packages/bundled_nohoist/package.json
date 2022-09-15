@@ -1,0 +1,29 @@
+{
+	"name": "bundled_nohoist",
+	"version": "0.1.0",
+	"bin": "dist/main.js",
+	"types": "dist/client.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsc",
+		"lint": "eslint src/*.ts*"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "16.11.59",
+		"eslint": "latest",
+		"eslint-config-mycompany": "*",
+		"mycompany-prettierrc": "*",
+		"mycompany-tsconfig": "*",
+		"typescript": "latest"
+	},
+	"prettier": "mycompany-prettierrc",
+	"eslintConfig": {
+		"extends": [
+			"mycompany"
+		],
+		"root": true
+	}
+}
