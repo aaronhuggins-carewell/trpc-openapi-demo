@@ -1,0 +1,12 @@
+{
+	"name": "mycompany-tsconfig",
+	"version": "0.0.0",
+	"private": true,
+	"files": [
+		"base.json"
+	],
+	"dependencies": {
+		"mycompany-prettierrc": "*"
+	},
+	"prettier": "mycompany-prettierrc"
+}

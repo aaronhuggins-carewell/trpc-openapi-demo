@@ -16,17 +16,11 @@
 		"@types/node": "16.11.59",
 		"eslint": "latest",
 		"eslint-config-mycompany": "*",
-		"monorepo-tsconfig": "*",
+		"mycompany-prettierrc": "*",
+		"mycompany-tsconfig": "*",
 		"typescript": "latest"
 	},
-	"prettier": {
-		"tabWidth": 2,
-		"useTabs": true,
-		"printWidth": 120,
-		"semi": true,
-		"trailingComma": "all",
-		"singleQuote": true
-	},
+	"prettier": "mycompany-prettierrc",
 	"eslintConfig": {
 		"extends": [
 			"mycompany"

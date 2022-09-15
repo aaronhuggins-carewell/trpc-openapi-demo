@@ -11,9 +11,11 @@
 		"eslint-config-turbo": "latest"
 	},
 	"devDependencies": {
+		"mycompany-prettierrc": "*",
 		"typescript": "latest"
 	},
 	"publishConfig": {
 		"access": "public"
-	}
+	},
+	"prettier": "mycompany-prettierrc"
 }

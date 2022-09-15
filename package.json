@@ -15,19 +15,21 @@
 		"lint": "turbo run lint",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\""
 	},
+	"dependencies": {
+		"mycompany-api-routes": "npm:noist@^1.0.0"
+	},
 	"devDependencies": {
 		"eslint-config-mycompany": "*",
+		"mycompany-prettierrc": "*",
 		"prettier": "latest",
 		"ts-node": "latest",
 		"turbo": "latest",
 		"typescript": "latest"
 	},
-	"prettier": {
-		"tabWidth": 2,
-		"useTabs": true,
-		"printWidth": 120,
-		"semi": true,
-		"trailingComma": "all",
-		"singleQuote": true
+	"prettier": "mycompany-prettierrc",
+	"eslintConfig": {
+		"extends": [
+			"mycompany"
+		]
 	}
 }

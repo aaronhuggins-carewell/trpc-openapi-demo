@@ -8,30 +8,29 @@
 	],
 	"scripts": {
 		"build": "tsc",
-		"lint": "eslint src/*.ts*"
+		"lint": "eslint src/*.ts*",
+		"unhoist": "bundled_nohoist",
+		"prepack": "npm run build && npm run unhoist"
 	},
 	"dependencies": {
 		"@trpc/client": "^9.27.2",
+		"@trpc/server": "^9.27.2",
 		"mycompany-api-routes": "*"
 	},
 	"devDependencies": {
 		"@types/node": "16.11.59",
+		"bundled_nohoist": "*",
 		"eslint": "latest",
 		"eslint-config-mycompany": "*",
-		"monorepo-tsconfig": "*",
+		"mycompany-prettierrc": "*",
+		"mycompany-tsconfig": "*",
 		"typescript": "latest"
 	},
 	"bundledDependencies": [
+		"@trpc/server",
 		"mycompany-api-routes"
 	],
-	"prettier": {
-		"tabWidth": 2,
-		"useTabs": true,
-		"printWidth": 120,
-		"semi": true,
-		"trailingComma": "all",
-		"singleQuote": true
-	},
+	"prettier": "mycompany-prettierrc",
 	"eslintConfig": {
 		"extends": [
 			"mycompany"
