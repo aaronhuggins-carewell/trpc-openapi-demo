@@ -1,8 +1,11 @@
 {
 	"name": "eslint-config-mycompany",
 	"version": "0.1.0",
-	"main": "index.js",
+	"main": "dist/index.js",
 	"license": "MIT",
+	"scripts": {
+		"build": "tsc"
+	},
 	"dependencies": {
 		"@typescript-eslint/parser": "latest",
 		"@typescript-eslint/eslint-plugin": "latest",
